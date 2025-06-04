@@ -23,10 +23,10 @@
   --ff-base: "Montserrat", sans-serif;
 
   /* Font sizes  */
-  --text-sm: 0.875rem;
+  --text-sm: 0.75rem;
   --text-base: 1rem;
-  --text-lg: 2.5rem;
-  --text-xl: 4rem;
+  --text-lg: 1.5rem;
+  --text-xl: 2rem;
 
   /* Espaçamentos */
   --px-base: 1.5rem;
@@ -60,10 +60,10 @@ a {
 @media (width >= 80em) {
   /* Font sizes  */
   :root {
-    --text-sm: 0.75rem;
+    --text-sm: 0.875rem;
     --text-base: 1rem;
-    --text-lg: 1.5rem;
-    --text-xl: 2rem;
+    --text-lg: 2.5rem;
+    --text-xl: 4rem;
 
     --px-base: 2rem;
   }

@@ -1,0 +1,49 @@
+section.hero {
+  max-width: 80rem;
+  width: 100%;
+  padding: 2.5rem var(--px-base);
+  margin-inline: auto;
+  --word-height: 2.5rem;
+
+  & h1 div {
+    /* Aqui é a div dentro do h1 que guarda o texto animado */
+    display: inline-block;
+    overflow: hidden;
+    height: var(--word-height);
+    vertical-align: bottom;
+    width: min-content;
+  }
+
+  & h1 span:nth-child(1) {
+    /* Aqui é o primeiro span dentro do h1 que guarda o texto animado */
+    color: var(--snitap-sky-mid);
+  }
+
+  & h1 span:nth-child(2) {
+    /* Aqui é o segundo span dentro do h1 que guarda o texto animado */
+    color: var(--snitap-joy-mid);
+  }
+
+  & h1 span:nth-child(3) {
+    /* Aqui é o terceiro span dentro do h1 que guarda o texto animado */
+    color: var(--snitap-leaf-mid);
+  }
+
+  @media (width >= 80em) {
+    & h1 div {
+      --word-height: 5rem;
+    }
+  }
+}
+
+@keyframes slideUp {
+  0%,
+  22% {
+    transform: translateY(0);
+  }
+
+  33%,
+  55% {
+    transform: translateY(calc(-1 * var(--word-height)));
+  }
+}
